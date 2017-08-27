@@ -1,4 +1,4 @@
-[Virtual Machine](VM.md) | [Ansible](Ansible.md) 
+[Virtual Machine](VM.md) | [Using Computing Environments]() 
 
 Computing Environment Workshop
 ----------------------------------

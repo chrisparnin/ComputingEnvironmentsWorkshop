@@ -1,4 +1,4 @@
-[Virtual Machine](VM.md) | [Ansible](Ansible.md) | [Playbooks](Playbooks.md)
+[Virtual Machine](VM.md) | [Using Computing Environments]() 
 
 ## Creating Virtual Machine
 
