@@ -1,4 +1,4 @@
-[Virtual Machine](VM.md) | [Using Computing Environments]() 
+[Virtual Machines](VM.md) | [Using Computing Environments]() 
 
 Computing Environment Workshop
 ----------------------------------
@@ -7,13 +7,11 @@ The goal of this workshop is to demonstrate the value of automatically creating 
 
 ### Not Your Typical Virtual Machine
 
-When developers think about virtual machines, a common idea that comes to mind is a dedicated heavy-weight virtualized system with a full graphics Desktop. Alternatively, you may think of dual-booted systems. While these types of systems can be useful, this is not what 
+When developers think about virtual machines, a common idea that comes to mind is a dedicated heavy-weight virtualized system with a full graphics Desktop. Alternatively, you may think of dual-booted systems. While these types of systems can be useful, the goal of this workshop is to introduce you to a different concept for software development.
 
-We define a *computing environment* as 
+We define a *computing environment* as an automatically configured environment for executing a program and interfacing with its data and infrastructure components. Computing environments are useful for personal software development that involves data analytics, machine learning, or requires complex infrastructure. However, using computing environments have other benefits, such as supporting configuration management for software development teams, reproducibility for research, and enabling scaling of computations as necessary. 
 
-Headless environments.
-
-
+To use a computing environment, you can use your host operating system to write code, interact with the running program, and visualize its executions. But the code itself runs in a headless virtual machine. To accomplish this, we use a set of tools to enable you to map files and program between your host environment and computing environment.
 
 Using Baker.
 

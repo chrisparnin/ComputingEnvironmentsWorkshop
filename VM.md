@@ -1,10 +1,14 @@
-[Virtual Machine](VM.md) | [Using Computing Environments]() 
+[Virtual Machines](VM.md) | [Using Computing Environments](VM.md) 
 
-## Creating Virtual Machine
+## Virtual Machines
+
+## PreReqs
 
 * Install [vagrant](https://www.vagrantup.com/downloads.html).
 * Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) is a recommended provider.
   Other [virtual machine providers](https://docs.vagrantup.com/v2/providers/) do exist.
+
+## Creating a Virtual Machine
 
 When you create a VM with vagrant, it will create a Vagrantfile in your current directory as well as a hidden directory (.vagrant).
 Vagrant only allows one virtual machine configuration per directory. You will want to organize your VMs:
