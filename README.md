@@ -13,6 +13,10 @@ We define a *computing environment* as an automatically configured environment f
 
 To use a computing environment, you can use your host operating system to write code, interact with the running program, and visualize its executions. But the code itself runs in a headless virtual machine. To accomplish this, we use a set of tools to enable you to map files and program between your host environment and computing environment.
 
-Using Baker.
+### Workshop
 
-Advanced. (See ansible...)
+1. We start with learning some tools that streamline the process of [creating virtual machines](VM.md).
+2. We practice [using several computing environments](CE.md).
+3. ZZZ?
+4. We demonstrate a new tool.
+5. Advanced topics.
