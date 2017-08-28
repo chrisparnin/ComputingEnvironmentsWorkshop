@@ -1,4 +1,4 @@
-[Virtual Machines](VM.md) | [Using Computing Environments](VM.md) 
+[Virtual Machines](VM.md) | [Using Computing Environments](CE.md) 
 
 ## Virtual Machines
 
