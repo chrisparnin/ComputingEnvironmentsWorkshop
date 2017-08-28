@@ -2,24 +2,49 @@
 
 ## Using Computing Environments
 
-### Setuping more
 
-* 1) Enable a synced folder. This will allow you to edit code/files from editors in your host OS.
-* 2) Fix DNS to use the same as your host OS instead of its own.
+### A simple node.js web server.
 
-```ruby
-  # Important, you must run vagrant in an admin shell if you want symlinks to work correctly.
-  # i.e., for npm install to work properly, you must have vagrant provision the machine in admin cmd prompt.
-  config.vm.synced_folder "C:/dev", "/vol/dev"
-  config.vm.synced_folder "C:/projects", "/vol/projects"
 
-  config.vm.provider :virtualbox do |vb|
-     # fix crappy dns
-     # https://serverfault.com/questions/453185/vagrant-virtualbox-dns-10-0-2-3-not-working
-     vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
-  end
+Install node.js in your virtual machine:
+
+```
+VM:> sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 68576280
+VM:> sudo apt-add-repository "deb https://deb.nodesource.com/node_7.x $(lsb_release -sc) main"
+VM:> sudo apt-get update
+VM:> sudo apt-get install nodejs
 ```
 
+On your VM, change into `~/code/projects/express`. Run `npm install`.
 
-iPython for Dazed example.
+Start the webserver.
 
+```
+VM:> npm run forever
+```
+
+Open a browser on your host. You should see your webserver running on 192.168.33.10:3000
+
+### A mysql server
+
+```
+wget http://dev.mysql.com/get/mysql-apt-config_0.8.1-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.1-1_all.deb
+
+sudo echo mysql-apt-config mysql-apt-config/select-server select mysql-5.7 | sudo debconf-set-selections
+sudo echo mysql-server mysql-server/root_password password mypass | sudo debconf-set-selections  
+sudo echo mysql-server mysql-server/root_password_again password mypass | sudo debconf-set-selections
+
+sudo apt-get update
+sudo apt-get install mysql-server
+```
+
+### A python jupyter notebook
+
+```
+sudo apt-get install python-dev python-pip
+sudo pip install --upgrade pip 
+sudo apt-get install jupyter
+
+jupyter notebook --ip 0.0.0.0
+```

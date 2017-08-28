@@ -36,12 +36,9 @@ You should be able to connect to the machine.
 
 #### How it works...
 
-When you create a VM with vagrant, it will create a Vagrantfile in your current directory as well as a hidden directory (`.vagrant`).
+When you create a VM with vagrant, vagrant will interact with a virtualization provider, such as VirtualBox to do the heavy-lifting. Vagrant is only a useful utility tool for coordinating the management of VMs. To store information about the VM, it will create a Vagrantfile in your current directory as well as a hidden directory (`.vagrant`).
 
-Vagrant only allows one virtual machine configuration per directory. You will want to organize your VMs:
-
-* `mkdir -p /boxes/ansible`; `cd /boxes/ansible`
-
+Vagrant only allows one virtual machine configuration per directory. You will want to organize your VMs, so you store multiple images in one place. For example in a directory (`/boxes`):
 
 ### Customizing Your Virtual Machine
 
@@ -66,4 +63,23 @@ config.vm.network "private_network", ip: "192.168.33.10"
 ```
 
 Then run, `vagrant reload`. 
+
+#### Enabling easy workflow, fixing some issues.
+
+* 1) Enable a synced folder. This will allow you to edit code/files from editors in your host OS.
+* 2) Fix DNS to use the same as your host OS instead of its own.
+
+```ruby
+  # Important, you must run vagrant in an admin shell if you want symlinks to work correctly.
+  # i.e., for npm install to work properly, you must have vagrant provision the machine in admin cmd prompt.
+  config.vm.synced_folder "C:/dev", "/vol/dev"
+  config.vm.synced_folder "C:/projects", "/vol/projects"
+
+  config.vm.provider :virtualbox do |vb|
+     # fix crappy dns
+     # https://serverfault.com/questions/453185/vagrant-virtualbox-dns-10-0-2-3-not-working
+     vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+  end
+```
+
 
