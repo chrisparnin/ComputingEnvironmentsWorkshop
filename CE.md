@@ -44,7 +44,7 @@ sudo apt-get install mysql-server
 ```
 sudo apt-get install python-dev python-pip
 sudo pip install --upgrade pip 
-sudo apt-get install jupyter
+sudo -H pip install jupyter
 
 jupyter notebook --ip 0.0.0.0
 ```
