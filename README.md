@@ -19,6 +19,5 @@ To use a computing environment, you can use your host operating system to write 
 
 1. We start with learning some tools that streamline the process of [creating virtual machines](VM.md).
 2. We practice [using several computing environments](CE.md).
-3. ZZZ?
-4. We demonstrate a new tool.
-5. Advanced topics.
+3. We demonstrate a new tool.
+4. Advanced topics.
