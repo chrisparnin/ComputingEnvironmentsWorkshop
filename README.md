@@ -1,4 +1,4 @@
-[Virtual Machines](VM.md) | [Using Computing Environments]() 
+[Virtual Machines](VM.md) | [Using Computing Environments](CE.md) 
 
 Computing Environment Workshop
 ----------------------------------
