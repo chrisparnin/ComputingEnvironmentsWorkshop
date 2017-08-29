@@ -28,8 +28,8 @@ baker --repo https://github.com/ottomatica/baker-test
 
 You will be prompted to provide two values. While you can change these values, you can use the following default values:
 
-*how much memory?*: 1024  
-*Port for express server?*: 9000  
+*how much memory?* 1024  
+*Port for express server?* 9000  
 
 #### Test it out
 
