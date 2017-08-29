@@ -35,7 +35,7 @@ If something goes wrong, and you want to run again, you can switch over to the "
 
 #### Test it out
 
-This will clone a git repo into the `baker-test` and create a VM to run configured to run the server. You can checkout the node server by visiting `192.168.22.22:9000` in your web browser.
+This will clone a git repo into the `baker-test` and create a VM to run configured to run the server. You can checkout the node server by visiting `127.0.0.1:9000` in your web browser.
 
 Cool. You can ssh into the VM by just running `baker --ssh baker-test`. baker will automatically create a synced_folder for you. Just go to `cd /baker-test`.
 
