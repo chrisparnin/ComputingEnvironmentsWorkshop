@@ -33,7 +33,7 @@ You will be prompted to provide two values. While you can change these values, y
 
 #### Test it out
 
-This will clone a git repo into the `baker-test`. You can checkout the node server by visiting `192.168.22.22:9000` in your web browser.
+This will clone a git repo into the `baker-test` and create a VM to run configured to run the server. You can checkout the node server by visiting `192.168.22.22:9000` in your web browser.
 
 Cool. You can ssh into the VM by just running `baker --ssh baker-test`. baker will automatically create a synced_folder for you. Just go to `cd /baker-test`.
 
