@@ -26,7 +26,7 @@ Run the following
 baker bake2 --repo https://github.com/ottomatica/baker-test
 ```
 
-If something goes wrong, and you want to run again, you can switch over to the "local" version of the command, to reinitialized the baker-test directory: `baker bake --local baker-test/`
+If something goes wrong, and you want to run again, you can switch over to the "local" version of the command, to reinitialized the baker-test directory: `baker bake2 --local baker-test/`
 
 #### Test it out
 
