@@ -13,7 +13,7 @@ VM:> sudo apt-get update
 VM:> sudo apt-get install nodejs
 ```
 
-On your VM, change into `~/code/projects/express`. Run `npm install`.
+On your VM, change into `/vagrant/projects/express/`. Run `npm install`.
 
 Start the webserver.
 
